@@ -1,0 +1,92 @@
+/* certidao.css - Hanya untuk halaman Solicitar Certidão */
+
+.container-certidao-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px 40px 20px;
+  background: #f4f5f7;
+  min-height: 80vh;
+}
+
+.card-certidao {
+  background: #ffffff;
+  width: 100%;
+  max-width: 620px;
+  padding: 32px 36px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  border: 1px solid #eef0f3;
+  margin-top: 20px;
+}
+
+.card-certidao h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.card-certidao p.text-muted {
+  font-size: 14px;
+  color: #6b7280 !important;
+  margin-bottom: 20px;
+}
+
+/* Label */
+.card-certidao .form-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+/* Input & Select */
+.card-certidao .form-control,
+.card-certidao .form-select {
+  padding: 11px 14px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1.5px solid #e5e7eb;
+  background-color: #f9fafb;
+  transition: all 0.2s ease;
+}
+
+.card-certidao .form-control:focus,
+.card-certidao .form-select:focus {
+  background-color: #fff;
+  border-color: #b91c1c; /* merah paróquia */
+  box-shadow: 0 0 0 3px rgba(185, 28, 28, 0.12);
+}
+
+/* Button */
+.card-certidao .btn-primary {
+  background-color: #b91c1c;
+  border-color: #b91c1c;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  transition: all 0.2s;
+}
+
+.card-certidao .btn-primary:hover {
+  background-color: #991b1b;
+  border-color: #991b1b;
+  transform: translateY(-1px);
+}
+
+/* Responsive HP */
+@media (max-width: 768px) {
+  .container-certidao-wrapper {
+    padding: 0;
+    background: #fff;
+  }
+  .card-certidao {
+    box-shadow: none;
+    border: none;
+    padding: 24px 20px;
+    margin-top: 0;
+    border-radius: 0;
+  }
+}
